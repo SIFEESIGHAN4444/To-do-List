@@ -1,0 +1,139 @@
+body {
+    
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url(image/perseverance.jpg);
+    background-size: cover;
+    height: auto;
+}
+
+.task-wrapper {
+    background-image: url(image/blue\ dragon.jpg);
+    background-size: cover;
+    height: auto;
+    width: 50%;
+    margin: auto;
+    padding: 25px;
+    margin-top: 40px;
+    border-radius: 7px;
+}
+
+.form-ele {
+    width: 98%;
+    margin-bottom: 10px;
+   
+}
+
+.task-date-time {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.task-date-time>input {
+    width: 30%;
+}
+
+form button {
+    margin: auto;
+    display: block;
+    margin-top: 25px;
+    width: 45%;
+    background-color: rgba(87, 105, 207, 0.473);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px; 
+} 
+
+.m-0 {
+    margin: 0;
+}
+.delete {
+    background-image: linear-gradient(to right, blue,purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    border-radius: 7px;
+     
+}
+.edit {
+    color: blue;
+    background-image: linear-gradient(to right, blue,purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 7px; 
+}
+.task {
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.priority {
+    font-size: small;
+    float: right;
+    margin-right: 9em;
+    margin-top: -2.2em;
+    color: black;
+} 
+#name-error,#description-error {
+    margin-left: 1px;
+    color: crimson;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    background: white;
+    width: 98%;
+}
+
+.task-wrapper h2 {
+    margin-top: 0;
+    color: rgb(52, 106, 187);
+}
+
+.date-wrapper {
+    font-size: 9px;
+    float: right;
+    margin-top: -3em;
+}
+
+.task-header {
+    color: rgb(70, 71, 71);
+}
+
+.task-title {
+    margin: 0;
+    font-size: 12px;
+}
+
+.task-desc {
+    font-size: 10px;
+}
+
+.task-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.task-footer>button:first-child {
+    margin-right: 5px;
+}
+.input-control input:focus {
+    outline: 0;
+}
+.input-control.success input {
+    border-color: #09c372;
+}
+.input-control.error input {
+    border-color: #ff3860;
+}
+.input-control.error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}

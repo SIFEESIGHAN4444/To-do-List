@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <!-- Task  -->
+        <div class="task-wrapper">
+            <form id="task-form" action="#">
+                <!-- task name -->
+                <div>
+                    <input type="text" name="task_name" id="task_name" placeholder="Task name" class="form-ele">
+                    <div id="name-error"></div>
+                </div>
+                <!-- task description -->
+                <div>
+                    <textarea name="description" id="description"  cols="30" rows="5" placeholder="Enter task description" class="form-ele"></textarea></div>
+                    <div id="description-error"></div>
+                    <!-- priority -->
+                    <!-- <div class="priority">
+                    <input type="number" name="priority" placeholder="priority Level"> -->
+                    
+                <!-- date and time -->
+                <div class="task-date-time">
+                    <input type="number" name="priority" placeholder="priority Level">
+                    <input type="date" name="date" id="task-date" > 
+                    <input type="time" name="time" id="task-time" > 
+                </div>
+
+                <div>
+                    <input type="hidden" name="todoId">
+                </div>
+                <hr>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <!-- list os tasks -->
+        <div class="task-wrapper">
+            <h2>Tasks</h2>
+            <div id="tasks"></div>
+        </div>
+    </main>
+    <footer>
+        <script src="Main.js"></script>
+    </footer>
+</body>
+
+</html>
